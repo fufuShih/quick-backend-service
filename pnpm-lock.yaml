@@ -10,31 +10,30 @@ importers:
       '@types/node': 22.2.0
       typescript: 5.5.4
 
-  src/packages/auth:
+  packages/auth:
     specifiers:
+      '@types/bcrypt': ^5.0.0
+      '@types/node': ^18.0.0
       arctic: ^1.0.0
       bcrypt: ^5.1.0
+      typescript: ^4.9.5
       zod: ^3.21.4
     dependencies:
       arctic: 1.9.2
       bcrypt: 5.1.1
       zod: 3.23.8
+    devDependencies:
+      '@types/bcrypt': 5.0.2
+      '@types/node': 18.19.44
+      typescript: 4.9.5
 
-  src/packages/cli:
+  packages/cli:
     specifiers:
       '@types/node': ^22.2.0
       commander: ^12.1.0
       typescript: ^5.5.4
     dependencies:
       commander: 12.1.0
-    devDependencies:
-      '@types/node': 22.2.0
-      typescript: 5.5.4
-
-  src/packages/core:
-    specifiers:
-      '@types/node': ^22.2.0
-      typescript: ^5.5.4
     devDependencies:
       '@types/node': 22.2.0
       typescript: 5.5.4
@@ -382,6 +381,18 @@ packages:
       tslib: 2.6.3
     dev: false
     optional: true
+
+  /@types/bcrypt/5.0.2:
+    resolution: {integrity: sha512-6atioO8Y75fNcbmj0G7UjI9lXN2pQ/IGJ2FWT4a/btd0Lk9lQalHLKhkgKVZ3r+spnmWUKfbMi1GEe9wyHQfNQ==}
+    dependencies:
+      '@types/node': 18.19.44
+    dev: true
+
+  /@types/node/18.19.44:
+    resolution: {integrity: sha512-ZsbGerYg72WMXUIE9fYxtvfzLEuq6q8mKERdWFnqTmOvudMxnz+CBNRoOwJ2kNpFOncrKjT1hZwxjlFgQ9qvQA==}
+    dependencies:
+      undici-types: 5.26.5
+    dev: true
 
   /@types/node/22.2.0:
     resolution: {integrity: sha512-bm6EG6/pCpkxDf/0gDNDdtDILMOHgaQBVOJGdwsqClnxA3xL6jtMv76rLBc006RVMWbmaf0xbmom4Z/5o2nRkQ==}
@@ -774,10 +785,20 @@ packages:
     dev: false
     optional: true
 
+  /typescript/4.9.5:
+    resolution: {integrity: sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
+    dev: true
+
   /typescript/5.5.4:
     resolution: {integrity: sha512-Mtq29sKDAEYP7aljRgtPOpTvOfbwRWlS6dPRzwjdE+C0R4brX/GUyhHSecbHMFLNBLcJIPt9nl9yG5TZ1weH+Q==}
     engines: {node: '>=14.17'}
     hasBin: true
+    dev: true
+
+  /undici-types/5.26.5:
+    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
     dev: true
 
   /undici-types/6.13.0:

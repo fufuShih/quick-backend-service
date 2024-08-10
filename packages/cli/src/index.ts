@@ -16,8 +16,8 @@ program
 
       await fs.copyFile(templatePath, destinationPath);
       console.log(`${service} service has been added successfully.`);
-    } catch (error) {
-      console.error(`Failed to add ${service}: ${error.message}`);
+    } catch  {
+      console.error(`Failed to add ${service}`);
     }
   });
 
@@ -32,8 +32,8 @@ program
       files.forEach(file => {
         console.log(`- ${path.parse(file).name}`);
       });
-    } catch (error) {
-      console.error(`Failed to list services: ${error.message}`);
+    } catch {
+      console.error(`Failed to list services`);
     }
   });
 
