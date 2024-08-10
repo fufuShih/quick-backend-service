@@ -10,6 +10,17 @@ importers:
       '@types/node': 22.2.0
       typescript: 5.5.4
 
+  src/packages/cli:
+    specifiers:
+      '@types/node': ^22.2.0
+      commander: ^12.1.0
+      typescript: ^5.5.4
+    dependencies:
+      commander: 12.1.0
+    devDependencies:
+      '@types/node': 22.2.0
+      typescript: 5.5.4
+
   src/packages/core:
     specifiers:
       '@types/node': ^22.2.0
@@ -25,6 +36,11 @@ packages:
     dependencies:
       undici-types: 6.13.0
     dev: true
+
+  /commander/12.1.0:
+    resolution: {integrity: sha512-Vw8qHK3bZM9y/P10u3Vib8o/DdkvA2OtPtZvD871QKjy74Wj1WSKFILMPRPSdUSx5RFK1arlJzEtA4PkFgnbuA==}
+    engines: {node: '>=18'}
+    dev: false
 
   /typescript/5.5.4:
     resolution: {integrity: sha512-Mtq29sKDAEYP7aljRgtPOpTvOfbwRWlS6dPRzwjdE+C0R4brX/GUyhHSecbHMFLNBLcJIPt9nl9yG5TZ1weH+Q==}

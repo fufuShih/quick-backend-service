@@ -1,10 +1,13 @@
 {
   "name": "quick-backend-service",
   "version": "1.0.0",
-  "description": "",
+  "description": "A package providing BaaS-like services",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "pnpm run --filter=\"./packages/*\" build",
+    "cli": "pnpm --filter cli start",
+    "dev": "pnpm run --parallel --filter=\"./packages/*\" dev"
   },
   "keywords": [],
   "author": "",
@@ -12,5 +15,9 @@
   "devDependencies": {
     "@types/node": "^22.2.0",
     "typescript": "^5.5.4"
-  }
+  },
+  "workspaces": [
+    "src/packages/*",
+    "src/examples/*"
+  ]
 }
