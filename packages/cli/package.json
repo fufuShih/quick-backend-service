@@ -1,5 +1,5 @@
 {
-  "name": "cli",
+  "name": "@quick-service/cli",
   "version": "1.0.0",
   "description": "CLI for managing quick-backend-service",
   "main": "index.js",

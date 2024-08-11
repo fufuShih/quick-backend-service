@@ -1,5 +1,5 @@
 {
-  "name": "auth",
+  "name": "@quick-service/auth",
   "version": "1.0.0",
   "description": "OAuth authentication system",
   "type": "module",
